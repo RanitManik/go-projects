@@ -1,0 +1,20 @@
+# Compiled binary files for various OSes
+*.exe    # Windows
+*.dll    # Windows shared libraries
+*.so     # Linux shared object files
+*.dylib  # macOS shared libraries
+*.a      # Go static libs
+*.out    # go build default output
+
+# Custom-built binaries
+*.bin
+
+# Build directories
+/bin/
+/build/
+/dist/
+
+# Go workspace files
+go.sum
+
+*.DR_STORE
