@@ -121,10 +121,10 @@ func main() {
 
 ### 📝 Summary of API Endpoints
 
-| Method | Endpoint | Description |
-| | -- | |
-| GET | `/movies` | List all movies |
-| GET | `/movies/{id}` | Get a movie by ID |
-| POST | `/movies` | Add a new movie |
-| PUT | `/movies/{id}` | Update an existing |
-| DELETE | `/movies/{id}` | Delete a movie |
+| Method | Endpoint         | Description             |
+|--------|------------------|-------------------------|
+| GET    | `/movies`        | List all movies         |
+| GET    | `/movies/{id}`   | Get a movie by ID       |
+| POST   | `/movies`        | Add a new movie         |
+| PUT    | `/movies/{id}`   | Update an existing movie|
+| DELETE | `/movies/{id}`   | Delete a movie          |
