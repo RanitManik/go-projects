@@ -6,10 +6,10 @@ import (
 	"log"
 	"math/rand"
 	"net/http"
+	"slices"
 	"strconv"
 
 	"github.com/gorilla/mux"
-	"slices"
 )
 
 type Movie struct {
