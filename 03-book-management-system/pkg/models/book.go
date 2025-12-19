@@ -57,3 +57,27 @@ func DeleteBookById(id int64) error {
 	}
 	return nil
 }
+
+func UpdateBookById(id int64, updated *Book) (*Book, error) {
+	var book Book
+
+	if err := db.First(&book, id).Error; err != nil {
+		return nil, err
+	}
+
+	if updated.Name != "" {
+		book.Name = updated.Name
+	}
+	if updated.Author != "" {
+		book.Author = updated.Author
+	}
+	if updated.Publication != "" {
+		book.Publication = updated.Publication
+	}
+
+	if err := db.Save(&book).Error; err != nil {
+		return nil, err
+	}
+
+	return &book, nil
+}
