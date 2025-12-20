@@ -12,3 +12,10 @@ bin/
 build/
 dist/
 *.exe
+
+
+# =========================
+# Environment Variables
+# =========================
+.env
+.env.local
