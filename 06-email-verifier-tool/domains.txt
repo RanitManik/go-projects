@@ -1,0 +1,6 @@
+google.com
+gmail.com
+example.com
+openai.com
+
+invalid-domain-xyz-123.com
