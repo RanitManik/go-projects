@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "faebcc52-bef4-4347-9b1e-419b028379ad",
+		"name": "go-fiber-crm",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34405309"
+	},
+	"item": [
+		{
+			"name": "get leads",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Clean Code (Updated)\",\n  \"author\": \"Robert C. Martin\",\n  \"publication\": \"Pearson\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/leads",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"leads"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get a lead with id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/leads/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"leads",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create a lead",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Ranit Kumar Manik\",\n    \"email\": \"ranitmanikofficial@outlook.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/leads",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"leads"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete a lead with id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/leads/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"leads",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
