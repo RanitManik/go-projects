@@ -17,6 +17,3 @@ This repository is dedicated to practicing and mastering the Go programming lang
 | 09  | Go Fiber HRMS                | HRMS (Human Resource Management System) built with Go Fiber and MongoDB                   |
 | 10  | Go Serverless                | Serverless REST API built with AWS Lambda and DynamoDB for managing users                 |
 
----
-
-More projects will be added as I continue my Go learning journey!
